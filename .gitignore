@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/backend/.env
+../../naruto-back/.env
 
 # testing
 /coverage
