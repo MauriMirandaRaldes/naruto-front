@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div-container-form-signIn {
+    height: 100vh;
+    display: flex;
+}
+.container-inputs-signIn {
+    background-color: rgb(237, 205, 187);
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.custom-box-signIn {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div1-signIn {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(255, 237, 219);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1-signIn img {
+    width: 50%;
+    height: 100%;
+}
+.div1-signIn h2 {
+    font-size: 2.5rem !important;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    color: grey;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    font-family: 'Playfair Display', serif;
+    animation: parpadeando 5s infinite;
+}
+@keyframes parpadeando {
+    0% {
+        background-color: white;
+        color: grey;
+    }
+    25% {
+        background-color: pink;
+        color: hotpink;
+    }
+    50% {
+        background-color: orange;
+        color: orangered;
+    }
+    75% {
+        background-color: yellow;
+        color: yellowgreen;
+    }
+    100% {
+        background-color: white;
+        color: grey;
+    }
+}
+.custom-titulo-signIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(148, 148, 148);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.custom-titulo-signIn h2 {
+    color: white;
+    font-size: 2rem !important;
+    font-weight: bold;
+    z-index: 2;
+    font-family: 'Playfair Display', serif;
+}
+.custom-button-submit-signIn {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem !important;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+}
+.container-button-submit-signIn {
+    background-color: rgb(227, 183, 160);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    border-radius: 5px;
+    width: 100%;
+}
+.container-button-submit-signIn button:hover {
+    cursor: pointer;
+    background-color: rgba(158, 71, 71, 0.582);
+    color: white;
+    font-weight: bold;
+}
+.nuevo-div-signIn {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nuevo-div-signIn button {
+    padding: 1rem;
+    font-size: 2rem; 
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.nuevo-div-signIn button:hover {
+    cursor: pointer;
+    background-color: darkred;
+    color: orange;
+}
+.custom-container-linkrouter-signIn {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-container-linkrouter-signIn p {
+    width: 50%;
+    text-align: center;
+    font-size: 1rem !important;
+    font-family: 'Playfair Display', serif;
+}
+.custom-alerta-signIn {
+    color: white;
+    font-size: 1rem !important; 
+    background-color: rgb(223, 120, 97);
+    padding: 1rem;
+    width: 76%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 900px){
+    /*contenedor del formulario*/
+    .custom-box-signIn {
+        height: 100%;
+        width: 50%;
+    }
+    /*contenedor de fondo imagen*/
+    .div1-signIn {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /*imagen de naruto y sus compañeros*/
+    .div1-signIn img {
+        width: 80%;
+        height: 85%;
+    }
+    /*texto que cambiar de color*/
+    .div1-signIn h2 {
+        font-size: 1.2rem !important;
+        padding: 0;
+        width: 60%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*formulario*/
+    .container-inputs-signIn {
+        padding: 2rem;
+    }
+    /*parrafo para ir a sign up*/
+    .custom-container-linkrouter-signIn p {
+        font-size: 0.8rem !important;
+    }
+    /*alertas rojas*/
+    .custom-alerta-signIn {
+        font-size: 0.8rem !important; 
+        padding: 1rem;
+        width: 63%;
+    }
+    /*boton submit y back*/
+    .custom-button-submit-signIn {
+        font-size: 0.8rem !important;
+        padding: 10px 15px;
+    }
+    /*titulo sign in*/
+    .custom-titulo-signIn h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /*contenedor general*/
+    .div-container-form-signIn {
+        background: url("../assets//protagonistas.png") top / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: mover-fondo-2 15s infinite;
+    }
+    @keyframes mover-fondo-2 {
+        0% {
+            background: url("../assets//protagonistas.png") top / cover no-repeat;
+        }
+        50% {
+            background: url("../assets//protagonistas.png") bottom / cover no-repeat;
+        }
+        100% {
+            background: url("../assets//protagonistas.png") top / cover no-repeat;
+        }
+    }
+    /*contenedor del formulario*/
+    .custom-box-signIn {
+        height: 100%;
+        width: 50%;
+    }
+    /*contenedor de fondo imagen*/
+    .div1-signIn {
+        display: none;
+    }
+    /*imagen de naruto y sus compañeros*/
+    .div1-signIn img {
+        width: 80%;
+        height: 85%;
+    }
+    /*texto que cambiar de color*/
+    .div1-signIn h2 {
+        font-size: 1.2rem !important;
+        padding: 0;
+        width: 60%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*formulario*/
+    .container-inputs-signIn {
+        padding: 1rem;
+    }
+    /*contenedor del parrafo para ir a sign up*/
+    .custom-container-linkrouter-signIn {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*parrafo para ir a sign up*/
+    .custom-container-linkrouter-signIn p {
+        font-size: 0.7rem !important;
+    }
+    /*alertas rojas*/
+    .custom-alerta-signIn {
+        font-size: 0.7rem !important; 
+        padding: 1rem;
+        width: 63%;
+    }
+    /*boton submit y back*/
+    .custom-button-submit-signIn {
+        font-size: 0.7rem !important;
+        padding: 10px 15px;
+        margin-right: 5px;
+    }
+    /*titulo sign in*/
+    .custom-titulo-signIn h2 {
+        font-size: 1rem !important;
+    }
+    /*contenedor del boton submit y back*/
+    .container-button-submit-signIn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

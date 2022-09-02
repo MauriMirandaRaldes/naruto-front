@@ -1,0 +1,65 @@
+// MongoDB Playground
+//https://docs.mongodb.com/manual/crud/
+const database = 'Naruto'; // acá coloco la base de datos a la cual quiero vincular el playground
+
+use(database);
+
+// drop vacía la base de datos
+db.detallespjcols.drop(); // acá coloco la colección existente dentro de mi base de datos a la cual quiero vincularme
+
+// Inserta los documentos que nosotros le indiquemos dentro de nuestra base de datos
+db.detallespjcols.insertMany(
+    [
+        {
+            "habilidades": {
+                "habilidad1": "Modo Sabio: Es la capacidad de poder detectar e identificar el Chakra de las personas desde grandes distancias. Con ésta habilidad, puede reaccionar más fácilmente a oponentes realmente rápidos",
+                "imagen1": "https://i.pinimg.com/564x/d5/84/9c/d5849ce3c3b0947dd62341ba158c0229.jpg",
+                "habilidad2": "Clones de sombra: es una técnica desarrollada por Tobirama Senju, el Segundo Hokage, que consiste en la creación de duplicados idénticos en todo aspecto del usuario para utilizarlos en diversos fines.",
+                "imagen2": "http://pa1.narvii.com/6468/735675ced91a5608d858655d61b629a081d80d66_00.gif",
+                "habilidad3": "Rasengan: Es una técnica donde el usuario libera chakra en la palma de su mano y lo hace rotar a gran velocidad para crear una esfera con el objetivo de impactar al enemigo",
+                "imagen3": "https://phoneky.co.uk/thumbs/screensavers/down/anime/narutorase_74sftlwn.gif"
+            },
+            "_id": ObjectId("62be03caee3b9fc2d7b6adec"),
+            "maestro": "Jiraiya",
+            "aliados": "Lee, Garaa, Sakura, Sai, Sasuke "
+        },
+        {
+            "habilidades": {
+                "habilidad1": "Chidori: Este Jutsu consiste en juntar una gran cantidad de chakra en la mano del usuario",
+                "imagen1": "https://i.gifer.com/79dV.gif",
+                "habilidad2": "Jutsu bola de fuego: es un jutsu de elemento fuego que consiste en almacenar chakra dentro del cuerpo, convirtiéndolo en fuego, y expulsándolo de la boca en una esfera de llamas masiva. El alcance del ataque depende de la cantidad de chakra que se reúne.",
+                "imagen2": "https://pbs.twimg.com/media/ETsol9iUMAIK950.jpg",
+                "habilidad3": "Susano: es un jutsu que crea a un humanoide espiritual con forma de guerrero samurai. Se trata de un espíritu gigantesco, el cual rodea y protege al usuario que lo utilice.",
+                "imagen3": "https://c.tenor.com/eAzd0yrdvHYAAAAd/sasuke-naruto.gif"
+            },
+            "_id": ObjectId("62be03caee3b9fc2d7b6aded"),
+            "maestro": "Orochimaru",
+            "aliados": "Orochimaru, Kabuto, Sakura"
+        },
+        {
+            "habilidades": {
+                "habilidad1": "Ninjutsu médico: Sakura demostró ser capaz de curar heridas fatales con poco esfuerzo, aún cuando médicos más experimentados lo considerarían una causa perdida ",
+                "imagen1": "https://c.tenor.com/ltMkU3xooA8AAAAC/healing-sakura.gif",
+                "habilidad2": "Super fuerza: Un enemigo golpeado por ella podría sufrir la muerte instantánea, fracturas, órganos rotos, o cualquier otra herida de extremo daño ",
+                "imagen2": "https://c.tenor.com/ZOLwENxgQiQAAAAC/naruto-jace.gif"
+            },
+            "_id": ObjectId("62be03caee3b9fc2d7b6adee"),
+            "maestro": "Tsunade",
+            "aliados": "Choji, Ino, Naruto, Sasuke, Lee"
+        },
+        {
+            "habilidades": {
+                "habilidad1": "Chidori: Intentó hacer el rasengan pero como su elemento es rayo, creó el chidori. Éste tiene dos inconvenientes: la cantidad de Chakra que se requiere para su uso y la velocidad a la cual el usuario se debe mover.",
+                "imagen1": "https://c.tenor.com/dCffHrZ-4s0AAAAC/chidori-kakashi.gif",
+                "habilidad2": "Sharingan: le permite copiar cualquier jutsu, ver a través de cualquier Genjutsu, realizar genjutsus y predecir los movimientos del oponente. Sin embargo, debido a que Kakashi no tiene sangre Uchiha, no puede desactivar el Dojutsu,",
+                "imagen2": "https://i.ytimg.com/vi/thvszCH-J-g/maxresdefault.jpg",
+                "habilidad3": "Ninken: Es un jutsu de invocación en el cual invoca a unos canes, sus comapeñeros perrunos enfocados en la caza y en el rastreo, además de tener gran astucia y velocidad",
+                "imagen3": "https://pm1.narvii.com/6552/2bbc90b14a6dab42fd72ba10ff2a8d9a142667dc_hq.jpg "
+            },
+            "_id": ObjectId("62be03caee3b9fc2d7b6adef"),
+            "maestro": "Minato",
+            "aliados": "Guy, Obito, Rin Nohara, Asuma"
+        }
+    ]
+)
+

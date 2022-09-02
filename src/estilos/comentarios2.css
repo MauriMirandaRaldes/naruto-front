@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div-container-comentarios {
+    background: repeating-linear-gradient(45deg, rgb(227, 183, 160) , rgb(227, 183, 160) 10px, white 10px, white 20px);
+    height: 100vh;
+    display: flex;
+    background-attachment: fixed;
+}
+.container-form-comentarios {
+    background-color: rgb(227, 183, 160);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.custom-form-comentarios {
+    height: 30%;
+    width: 20vw;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.custom-form-comentarios input {
+    background-color: rgba(227, 183, 160, 0.637);
+    border-radius: 7px;
+    font-size: 0.9rem !important;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    border: 2px solid grey;
+    color: grey;
+    width: 50%;
+    font-family: 'Playfair Display', serif !important;
+    margin-right: 5px;
+}
+.custom-form-comentarios input::placeholder {
+    color: rgb(168, 131, 111);
+}
+.custom-button-comentarios {
+    font-family: 'Playfair Display', serif !important;
+    padding: 10px;
+    font-size: 0.9rem !important; 
+    border-radius: 5px;
+    border: none;
+    border: 2px solid grey;
+    background-color: rgba(165, 42, 42, 0);
+    color: grey;
+}
+.custom-button-comentarios:hover {
+    cursor: pointer;
+    transition: all 300ms;
+    background-color: white;
+    color: grey;
+}
+.container-input-comentarios {
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container-2buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.botonVolver {
+    padding: 10px 20px;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 0.9rem !important;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid white;
+    background-color: rgba(165, 42, 42, 0);
+    color: white;
+}
+.botonVolver:hover {
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.container-comentarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 80vh;
+    padding: 1rem 1rem 0 1rem;
+    width: 70%;
+    overflow: auto; /*el overflow auto quiere decir que cuando sobrepasa el min-heigth de 80vh va a colocar un scroll*/
+}
+.div-nuevoComentario {
+    background-color: grey;
+    width: 15rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+.div-nuevoComentario2 {
+    background-color: rgb(245, 245, 245);
+    width: 15rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+/*comentarios*/
+.divInfo {
+    background-color: rgb(255, 237, 219);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+.divInfo2 {
+    background-color: rgb(191, 146, 112);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+.divInfo img {
+    width: 70px;
+    height: 65px;
+    object-fit: center;
+    border-radius: 50%;
+}
+.divInfo2 img {
+    width: 60px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 9px;
+    border: 2px solid white ;
+    animation: mover-imagen 10s infinite;
+}
+@keyframes mover-imagen {
+    0% {
+        object-position: top left;
+    }
+    50% {
+        object-position: bottom right;
+    }
+    100% {
+        object-position: top left;
+    }
+}
+.subDivInfo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+.subDivInfo2 {
+    display: flex;
+    width: 80%;
+    border-radius: 9px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+.custom-p-creador {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 0.9rem !important;
+}
+.customFecha {
+    color: black;
+    font-size: 0.7rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.divTexto {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 13vh;
+    overflow-y: auto;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 0.9rem !important;
+}
+.divTexto2 {
+    height: 15vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    overflow: auto;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 0.9rem !important;
+}
+#parrafoComentario {
+    text-indent: 1rem;
+    height: 100%;
+    padding: 1rem;
+}
+.customInput {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+    width: 65%;
+    border: 1.8px solid grey;
+    font-size: 0.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 5px;
+}
+.divInput {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+}
+.custom-icon {
+    font-size: 0.7rem !important;
+}
+.divInput button {
+    padding: 3px 10px;
+    color: black;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1.9px solid black;
+    font-size: 0.7rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.divInput button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.customEnviar {
+    background-color: white;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1.8px solid black;
+    font-size: 0.7rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.customEnviar:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.customNuevoDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+.custom-alerta-comentarios {
+    font-family: 'Playfair Display', serif;
+    width: 25%;
+    text-align: center;
+    background-color: grey;
+    padding: 1rem !important;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    position: absolute;
+    left: 3%;
+    top: 2%;
+    z-index: 11;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1000px){
+    /*divInfo*/
+    .customFecha {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 700px){ /*Cuando vuelva a casa tengo que trabajar sobre responsive en 700px y tambien que quede bonito en todas las paginas el responsive en 500px, ya que planeo grabar un video en responsive 500px*/
+
+    .container-input-comentarios {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+    }
+    .container-input-comentarios input {
+        width: 80%;
+    }
+    .custom-button-comentarios {
+        padding: 5px;
+        font-size: 0.8rem !important;
+    }
+    .custom-form-comentarios input {
+        font-size: 0.8rem !important;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .botonVolver {
+        padding: 5px;
+        font-size: 0.8rem !important;
+    }
+    .custom-form-comentarios {
+        margin: 0 1rem;
+        height: 10rem;
+        width: 10rem;
+    }
+    .container-2buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+    }
+    /*parrafo*/
+    #parrafoComentario {
+        font-size: 0.8rem !important;
+    }
+    /*divInfo*/
+    .divInfo2 {
+        background-color: rgb(191, 146, 112);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 1rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: white;
+    }
+    .divInfo2 img {
+        width: 50px;
+        height: 50px;
+        object-fit: center;
+        border-radius: 9px;
+        border: 2px solid white ;
+    }
+    .subDivInfo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        border-radius: 9px;
+        font-size: 0.8rem !important;
+    }
+    .customFecha {
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        font-size: 0.5rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .div-container-comentarios {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-form-comentarios {
+        width: 100%;
+        height: 40vh;
+    }
+    .custom-form-comentarios {
+        height: 70%;
+        width: 35%;
+    }
+    .container-input-comentarios {
+        background-color: white;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .custom-button-comentarios {
+        padding: 2px;
+        font-size: 0.55rem !important;
+    }
+    .custom-form-comentarios input {
+        width: 50%;
+        font-size: 0.55rem !important;
+        padding: 2px;
+        margin: 0;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+    .botonVolver {
+        padding: 3px 5px;
+        font-size: 0.55rem !important;
+        margin: 5px 0;
+    }
+    .container-2buttons {
+        height: 40%;
+    }
+    /*comentarios*/
+    .container-comentarios {
+        min-height: 80vh;
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .div-nuevoComentario2 {
+        background-color: rgb(245, 245, 245);
+        width: 12rem;
+        margin-bottom: 1rem;
+        height: 9rem;
+    }
+    .custom-alerta-comentarios {
+        background-color: grey;
+        padding: 10px;
+        left: 73%;
+        top: 3%;
+        border-radius: 5px;
+        font-size: 0.55rem !important;
+        width: 20%;
+        text-align: center;
+    }
+    .div-nuevoComentario {
+        background-color: grey;
+        width: 12rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .divInput button {
+        padding: 3px 10px;
+        color: black;
+        background-color: white;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1.9px solid black;
+        font-size: 0.55rem !important;
+    }
+    .custom-icon {
+        font-size: 0.55rem !important;
+    }
+    .customEnviar {
+        font-size: 0.55rem !important;
+    }
+    .customInput {
+        width: 60%;
+        font-size: 0.55rem !important;
+    }
+    #parrafoComentario {
+        padding: 1rem;
+        font-size: 0.55rem !important;
+    }
+}
+
+@media screen and (max-width: 383px){
+    .container-comentarios {
+        padding: 1rem;
+    }
+    .div-nuevoComentario2 {
+        background-color: rgb(245, 245, 245);
+        width: 12rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div-container-form-signUp {
+    height: 100vh;
+}
+.container-inputs {
+    background-color: rgb(237, 205, 187);
+    display: flex;
+    flex-direction: column ;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.custom-textField {
+    width: 15vw !important;
+}
+.custom-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.div1-signUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(148, 148, 148);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.div1-signUp h2 {
+    color: white;
+    font-size: 1.8rem !important;
+    font-weight: bold;
+    z-index: 2;
+    font-family: 'Playfair Display', serif;
+}
+.container-box-signUp {
+    display: flex;
+    height: 100vh;
+}
+.container-img-signUp {
+    width: 80%;
+    background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container-img-signUp p {
+    color: white;
+    background-color: rgb(223, 120, 97);
+    width: 37%;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem !important;
+}
+
+/* formulario */
+
+.custom-formulario {
+    transform: translateX(230%);
+    transition: all 2s;
+    position: absolute;
+    background-color: grey;
+}
+.custom-formulario2 {
+    transform: translateX(0px);
+}
+.div-nuevo-signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.div-nuevo-signUp button {
+    background: url("https://img.freepik.com/foto-gratis/fondo-textura-oro_53876-128170.jpg?w=740&t=st=1660340267~exp=1660340867~hmac=1ae4d4c2a483a76cc54275011c19b744bb5fe2150136d52c77cccf2b87bb17a2") center / cover no-repeat;
+    padding: 2rem;
+    color: rgb(49, 49, 49);
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.div-nuevo-signUp button:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px white;
+}
+.none {
+    text-decoration: none;
+}
+.custom-button-submit-signUp {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem !important;
+}
+.container-button-submit-signUp {
+    background-color: rgb(227, 183, 160);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    border-radius: 5px;
+    width: 100%;
+}
+.custom-snackbar {
+    left: 30% !important;
+}
+.custom-alerta {
+    background-color: rgb(148, 180, 159);
+    color: white;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem !important;
+}
+.container-button-submit-signUp button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    font-weight: bold;
+}
+.custom-konoha2{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.301); 
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 1400px){
+    .container-inputs {
+        background-color: rgb(237, 205, 187);
+        display: flex;
+        flex-direction: column ;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+        z-index: 1;
+    }
+    .container-button-submit-signUp {
+        background-color: rgb(227, 183, 160);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 10vh;
+        width: 100%;
+    }
+    .custom-button-submit-signUp {
+        font-size: 1.5vw;
+        padding: 8px;
+    }
+    .div1-signUp h2 {
+        color: white;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 850px){
+    /*fondo con imagen*/
+    .container-img-signUp {
+        width: 50%;
+        height: 100%;
+        animation: mover-fondo 15s infinite;
+    }
+    @keyframes mover-fondo {
+        0% {
+            background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") left / cover no-repeat;
+        }
+        50% {
+            background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") right / cover no-repeat;   
+        }
+        100% {
+            background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") left / cover no-repeat;
+        }
+    }
+    .container-img-signUp p {
+        font-size: .8rem !important;
+    }
+    /*contenedor de formulario*/
+    .custom-box {
+        width: 50%;
+    }
+    /*titulo-signUp*/
+    .div1-signUp h2 {
+        font-size: 1.3rem !important;
+    }
+    /*formulario*/
+    .container-inputs {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2rem;
+    }
+    /*contenedor del boton submit y del back*/
+    .container-button-submit-signUp {
+        height: 10vh;
+        width: 50%;
+    }
+    /*boton submit y back*/
+    .custom-button-submit-signUp {
+        padding: 10px;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    /*contenedor general*/
+    .div-container-form-signUp {
+        height: 100vh;
+        background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") left / cover no-repeat;
+        animation: mover-fondo 15s infinite;
+    }
+    /*fondo con imagen*/
+    .container-img-signUp {
+        width: 30%;
+        height: 100%;
+        animation: none;
+        background: none;
+        background-color: rgba(0, 0, 0, 0.250);
+    }
+    @keyframes mover-fondo {
+        0% {
+            background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") left / cover no-repeat;
+        }
+        50% {
+            background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") right / cover no-repeat;   
+        }
+        100% {
+            background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") left / cover no-repeat;
+        }
+    }
+    .container-img-signUp p {
+        font-size: 0.6rem !important;
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /*contenedor de formulario*/
+    .custom-box {
+        background: none;
+        width: 70%;
+    }
+    /*titulo-signUp*/
+    .div1-signUp h2 {
+        font-size: 1rem !important;
+    }
+    /*formulario*/
+    .container-inputs {
+        padding: 10px;
+        margin: 0 2rem;
+    }
+    /*contenedor del boton submit y del back*/
+    .container-button-submit-signUp {
+        height: 10vh;
+        width: 45%;
+    }
+    /*textField*/
+    .custom-textField {
+        width: 40% !important;
+    }
+    /*boton submit y back*/
+    .custom-button-submit-signUp {
+        padding: 10px;
+        font-size: 0.6rem !important;
+    }
+    /*alerta verde*/
+    .custom-alerta {
+        width: 50%;
+        padding: 10px;
+        font-size: 0.6rem !important;
+    }
+    /*en lugar de irse a la derecha, quiero que el formulario desaparesca*/
+    .custom-formulario {
+        display: none;
+    }
+    /*boton dorado*/
+    .div-nuevo-signUp button {
+        font-size: 0.8rem !important;
+    }
+}

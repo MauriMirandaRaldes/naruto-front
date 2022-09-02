@@ -1,0 +1,39 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: pink;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pelota {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mover 5s infinite;
+    animation-delay: 1000ms;
+}
+@keyframes mover {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(200px);
+        background-color: orangered;
+    }
+     50%{
+        transform: translateY(200px) translateX(200px);
+        background-color: orange;
+    }
+    75%{
+        transform: translateY(200px) translateX(0px);
+        background-color: yellow;
+    }
+} */

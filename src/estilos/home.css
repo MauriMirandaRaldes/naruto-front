@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.custom-video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100vw;
+    z-index: 0;
+}
+.div1-home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container-linkrouter {
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1-home h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 3px darkred;
+    animation: aparecer 5s infinite;
+    animation-delay: 1000ms;
+}
+@keyframes aparecer {
+    0% {
+        color: red;
+    }
+    25% {
+        color: grey;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: white;
+    }
+    100% {
+        color: red;
+    }
+}
+.decoration-none {
+    text-decoration: none;
+    z-index: 2;
+}
+.decoration-none:hover {
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.decoration-none:hover h1 {
+    color: white;
+}
+
+.div-usuarioConectado {
+    background: repeating-linear-gradient(45deg, grey, grey 10px,white 10px, white 20px);
+    position: fixed;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199);
+    font-weight: bold;
+    transition: 0.3s linear;
+    z-index: 9;
+    padding: 10px;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+}
+.div-container-nombre-y-button {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+}
+.nuevaClase {
+    background: repeating-linear-gradient(45deg, grey, grey 10px,white 10px, white 20px);
+    position: fixed;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199);
+    font-weight: bold;
+    transition: 0.3s linear;
+    z-index: 9;
+    padding: 10px;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    transform: translateY(-100px);
+    transition: 0.3s linear;
+    z-index: 9;
+}
+
+.nuevaClase h4 {
+    background-color: white;
+    border: 2px solid white;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.nuevaClase img {
+    height: 60px;
+    width: 60px;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.nuevaClase button {
+    border: none;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid rgb(237, 205, 187);
+    background-color: rgb(237, 205, 187);
+    color: rgb(201, 161, 139);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nuevaClase button:hover {
+    cursor: pointer;
+    border: 2px solid rgb(237, 205, 187);
+    background-color: rgb(237, 205, 187);
+    color: white;
+}
+.button-hidden {
+    position: fixed;
+    z-index: 10;
+    left: 0.5%;
+    cursor: pointer;
+    color: darkred !important;
+    font-size: 1.5rem !important;
+}
+.button-hidden2 {
+    position: fixed;
+    z-index: 10;
+    left: 0.5%;
+    cursor: pointer;
+    color: darkred !important;
+    font-size: 1.5rem !important;
+}
+.button-hidden:hover {
+    color: red !important;
+}
+.button-hidden2:hover {
+    color: red !important;
+}
+.div-usuarioConectado h4 {
+    background-color: white;
+    border: 2px solid white;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.div-usuarioConectado img {
+    height: 60px;
+    width: 60px;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.div-usuarioConectado button {
+    border: none;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid rgb(237, 205, 187);
+    background-color: rgb(237, 205, 187);
+    color: rgb(201, 161, 139);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.custom-exit {
+    font-size: 1.2rem !important;
+    margin-left: 3px !important;
+}
+.custom-ramen {
+    font-size: 1.2rem !important;
+    margin-left: 3px !important;
+}
+.div-usuarioConectado  button:hover {
+    cursor: pointer;
+    border: 2px solid rgb(237, 205, 187);
+    background-color: rgb(237, 205, 187);
+    color: white;
+}
+.custom-mensaje-usuarioConectado {
+    color: white;
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    position: fixed;
+    left: 43%;
+    bottom: 5%;
+    z-index: 100;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem !important;
+}
+.custom-mensaje-usuarioDesconectado{
+    color: white;
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    position: fixed;
+    left: 43%;
+    bottom: 5%;
+    z-index: 100;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem !important;
+}
+
+/*Responsive Design*/ 
+@media screen and (max-width:1000px){
+    /*divUsuarioConectado y contenedor de nombre y disconect*/
+    .div-usuarioConectado {
+        padding: 10px;
+        width: 20%;
+    }
+    /*boton disconect, h4 e imagen*/
+    .div-usuarioConectado h4 {
+        font-size: 13px;
+    }
+    .div-usuarioConectado img {
+        height: 50px;
+        width: 50px;
+    }
+    .div-usuarioConectado button {
+        font-size: 10px;
+    }
+    /*nueva clase*/
+    .nuevaClase {
+        padding: 10px;
+        width: 20%;
+    }
+    
+    .nuevaClase h4 {
+        font-size: 13px;
+    }
+    .nuevaClase img {
+        height: 50px;
+        width: 50px;
+    }
+    .nuevaClase button {
+        font-size: 10px;
+    }
+
+    /*iconos*/
+    .custom-exit {
+        font-size: 13px !important;
+        margin-left: 3px !important;
+    }
+    .custom-ramen {
+        font-size: 15px !important;
+        margin-left: 3px !important;
+    }
+    /*button hidden*/
+    .button-hidden {
+        position: fixed;
+        z-index: 10;
+        left: 0.2%;
+        cursor: pointer;
+        color: darkred !important;
+        font-size: 1.3rem !important;
+    }
+    .button-hidden2 {
+        position: fixed;
+        z-index: 10;
+        left: 0.2%;
+        cursor: pointer;
+        color: darkred !important;
+        font-size: 1.3rem !important;
+    }
+}
+
+@media screen and (max-width: 650px){
+    /*divUsuarioConectado y contenedor de nombre y disconect*/
+    .div-usuarioConectado {
+        padding: 10px;
+        width: 23%;
+    }
+    /*boton disconect, h4 e imagen*/
+    .div-usuarioConectado h4 {
+        font-size: 10px;
+    }
+    .div-usuarioConectado img {
+        height: 45px;
+        width: 45px;
+    }
+    .div-usuarioConectado button {
+        font-size: 7px;
+    }
+    /*nueva clase*/
+    .nuevaClase {
+        padding: 10px;
+        width: 23%;
+    }
+    
+    .nuevaClase h4 {
+        font-size: 10px;
+    }
+    .nuevaClase img {
+        height: 45px;
+        width: 45px;
+    }
+    .nuevaClase button {
+        font-size: 7px;
+    }
+
+    /*iconos*/
+    .custom-exit {
+        font-size: 10px !important;
+        margin-left: 3px !important;
+    }
+    .custom-ramen {
+        font-size: 11px !important;
+        margin-left: 3px !important;
+    }
+    /*button hidden*/
+    .button-hidden {
+        position: fixed;
+        z-index: 10;
+        left: 0%;
+        cursor: pointer;
+        color: darkred !important;
+        font-size: 13px !important;
+    }
+    .button-hidden2 {
+        position: fixed;
+        z-index: 10;
+        left: 0%;
+        cursor: pointer;
+        color: darkred !important;
+        font-size: 13px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /*divUsuarioConectado y contenedor de nombre y disconect*/
+    .div-usuarioConectado {
+        padding: 10px;
+        width: 23%;
+    }
+    /*boton disconect, h4 e imagen*/
+    .div-usuarioConectado h4 {
+        font-size: 8px;
+        padding: 2px;
+    }
+    .div-usuarioConectado img {
+        height: 35px;
+        width: 35px;
+    }
+    .div-usuarioConectado button {
+        font-size: 6px;
+        padding: 2px;
+    }
+    /*nueva clase*/
+    .nuevaClase {
+        padding: 10px;
+        width: 23%;
+    }
+    
+    .nuevaClase h4 {
+        font-size: 8px;
+        padding: 2px;
+    }
+    .nuevaClase img {
+        height: 35px;
+        width: 35px;
+    }
+    .nuevaClase button {
+        font-size: 6px;
+        padding: 2px;
+    }
+
+    /*iconos*/
+    .custom-exit {
+        font-size: 10px !important;
+        margin-left: 3px !important;
+    }
+    .custom-ramen {
+        font-size: 8px !important;
+        margin-left: 3px !important;
+    }
+    /*button hidden*/
+    .button-hidden {
+        position: fixed;
+        z-index: 10;
+        left: 0%;
+        cursor: pointer;
+        color: darkred !important;
+        font-size: 10px !important;
+    }
+    .button-hidden2 {
+        position: fixed;
+        z-index: 10;
+        left: 0%;
+        cursor: pointer;
+        color: darkred !important;
+        font-size: 10px !important;
+    }
+}

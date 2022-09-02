@@ -1,0 +1,44 @@
+// MongoDB Playground
+//https://docs.mongodb.com/manual/crud/
+const database = 'Naruto'; // acá coloco la base de datos a la cual quiero vincular el playground
+
+use(database);
+
+// drop vacía la base de datos
+db.personajes.drop(); // acá coloco la colección existente dentro de mi base de datos a la cual quiero vincularme
+
+// Inserta los documentos que nosotros le indiquemos dentro de nuestra base de datos
+db.personajes.insertMany([
+       {
+            "nombre": "Naruto Uzumaki",
+            "aldea": "Konoha",
+            "especie": "Humano",
+            "historia": "Tanto en el manga como en el anime, Naruto es un ninja de Konoha y forma parte del «Equipo 7», compuesto por Sasuke Uchiha, Sakura Haruno y su líder y sensei, Kakashi Hatake.",
+            "imagen": "https://indiehoy.com/wp-content/uploads/2022/05/naruto.jpg",
+            "detallesPj": ["62be03caee3b9fc2d7b6adec"], // acá coloco el id de el objeto de la otra coleccion que quiero meterle
+        },
+        {
+            "nombre": "Sasuke Uchiha"
+            "aldea": "Konoha",
+            "especie": "Humano",
+            "historia": "Sasuke Uchiha (うちは サスケ?)1​ es un personaje ficticio de la serie de manga y anime Naruto, creada por el mangaka Masashi Kishimoto. Inicialmente, el autor no tenía intenciones de crear a Sasuke, pero tras consultarlo con su editor, decidió concebir un rival para el protagonista principal de la obra, Naruto Uzumaki, lo que conllevó a la creación de este",
+            "imagen": "https://assets.puzzlefactory.com/puzzle/412/759/original.jpg",
+            "detallesPj": ["62be03caee3b9fc2d7b6aded"],
+        },
+        {
+            "nombre": "Sakura Haruno",
+            "aldea": "Konoha",
+            "especie": "Humano",
+            "historia": "Sakura Kinomoto (木之本 桜 Kinomoto Sakura) es un personaje ficticio y la protagonista principal del manga y anime Cardcaptor Sakura, creado por el grupo de mangakas CLAMP.",
+            "imagen": "https://animeargentina.net/wp-content/uploads/2022/01/Sakura-haruno-cumpleanos-biografia.jpg",
+            "detallesPj": ["62be03caee3b9fc2d7b6adee"],
+        },
+        {
+            "nombre": "Kakashi Hatake",
+            "aldea": "Konoha",
+            "especie": "Humano",
+            "historia": "Kakashi es un ninja de la Aldea Oculta de la Hoja, y es el líder y sensei del «Equipo 7», compuesto por Naruto Uzumaki, Sasuke Uchiha y Sakura Haruno. Sin embargo, Sasuke abandona el equipo y posteriormente se introduce a Sai como su reemplazo. Al principio, Kakashi se presenta como un personaje apático, pero en el desarrollo de la serie, la lealtad hacia sus amigos y estudiantes se hace cada vez más evidente. En el 2005, Kishimoto creó un gaiden titulado Kakashi Gaiden, en el que se revelan algunos de los datos sobre la identidad de Kakashi, así como los hechos que experimentó durante su juventud.9​ En la adaptación japonesa del anime su seiyū es Kazuhiko Inoue, mientras que en el doblaje hispanoamericano es Alfonso Obregón y en el español es Juan Arroyo.",
+            "imagen": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/05/Kakashi-se-convierte-en-toda-una-waifu-con-fanart-de-Naruto.jpg?fit=1280%2C720&quality=80&ssl=1",
+            "detallesPj": ["62be03caee3b9fc2d7b6adef"],
+        }
+    ])

@@ -1,0 +1,1429 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-general-cards {
+    background: repeating-linear-gradient(45deg, rgb(237, 205, 187) , rgb(237, 205, 187) 10px, white 10px, white 20px);
+}
+.custom-content {
+    font-family: 'Playfair Display', serif !important;
+}
+.card {
+    height: 60vh;
+    width: 20vw;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199) !important; 
+}
+.container-info-cards {
+    height: 100vh;
+    display: flex;
+}
+.container-p-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 237, 219);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199) !important; 
+    z-index: 1;
+    border-bottom-right-radius: 40px;
+    width: 80%;
+}
+.container-p-cards p {
+    border: 20px solid black;
+    width: 90%;
+    border-radius: 15px;
+    border-image: url("../assets/recuadro-hojas.png");
+    border-image-repeat: repeat;
+    border-image-slice: 33%;
+    border-image-width: 60px;
+    border-image-outset: 12px;
+    font-size: 1.1rem !important;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.container-button-cards{ 
+    background-color: rgba(237, 205, 187, 0);
+    /* box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.336); */
+    width: 20%;
+}
+.container-button-go {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mover-vertical 5s infinite;
+}
+@keyframes mover-vertical {
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(460px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+.custom-linkrouter-cards {
+    text-decoration: none;
+}
+.container-button-go button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.1rem !important;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199) !important; 
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+.custom-naruto-dibujo {
+    height: 100px;
+    width: 100px;
+}
+.container-button-go button:hover {
+    background-color: rgb(191, 146, 112);
+    color: white;
+    transition: all 200ms;
+    cursor: pointer;
+}
+.container-cards {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199) !important; 
+    border-bottom: 2px solid rgba(255, 255, 255, 0.473);
+    z-index: 10;
+}
+.container-h2-cards {
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-h2-cards h2 {
+    font-size: 2rem;
+    color: grey;
+    border-bottom: 5px solid grey;
+    position: relative;
+}
+.custom-span {
+    visibility: hidden;
+    position: absolute;
+    top: 140%;
+    left: 70%;
+    background-color: grey;
+    width: 200%;
+    font-size: 1.19vw;
+    color: white;
+    text-shadow: none;
+    font-weight: lighter;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199) !important; 
+    text-align: center;
+}
+.custom-span::after {
+    content: "";
+    border: 4px solid;
+    border-color: transparent transparent grey;
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+}
+.container-h2-cards h2:hover .custom-span {
+    visibility: visible;
+}
+.sub-container-cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.cardContent {
+    text-align: center;
+    background-color: white;
+    height: 25%;
+}
+.cardActions {
+    /* background: url("https://static.vecteezy.com/system/resources/previews/001/907/684/large_2x/black-texture-background-free-photo.jpg") center / cover no-repeat; */
+    background-color: grey !important;
+    height: 31%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.3rem !important;
+}
+.buttonDetalles {
+    font-size: 1.1rem !important; 
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(137, 43, 226, 0);
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.buttonDetalles:hover {
+    cursor: pointer;
+    background-color: white;
+    color: grey;
+    transition: all 300ms;
+    border: 2px solid white;
+}
+/*parte de abajo*/
+.div2-home {
+    background-color: rgb(227, 183, 160);
+    z-index: 5;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.div-container-button-comments {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mover 9s infinite;
+    margin: 0 2rem;
+}
+@keyframes mover {
+    0% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(1030px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+.div-container-button-comments button:hover {
+    background-color: rgb(191, 146, 112);
+    color: white;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.custom-jiraiya {
+    width: 100px;
+    height: 100px;
+}
+.div-container-button-comments button {
+    background-color: white;
+    font-size: 1.1rem !important;
+    padding: 2rem 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199) !important; 
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/*Responsive*/
+
+/*-------------1367px para arriba---------------*/
+@media screen and (min-width: 1367px){ /*Esta es la resolucion de mi pantalla, 1366px*/
+
+    /*Primeros 100vh, parte de arriba*/
+    .container-p-cards {
+        width: 75%;
+    }
+    .container-button-cards{ 
+        width: 25%;
+    }
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 15px;
+        padding: 1rem;
+        font-size: 1.2rem !important;
+    }
+    .container-button-go {
+        animation: mover-vertical 5s infinite;
+    }
+    @keyframes mover-vertical {
+        0% {
+            transform: translateY(50px);
+        }
+        50% {
+            transform: translateY(460px);
+        }
+        100% {
+            transform: translateY(50px);
+        }
+    }
+    .container-button-go button {
+        font-size: 1.2rem !important;
+        padding: 0.7rem 2.2rem;
+    }
+    .custom-naruto-dibujo {
+        height: 90px;
+        width: 90px;
+    }
+
+    /*Segundos 100vh, parte del medio*/
+    .card {
+        height: 55vh;
+        width: 20vw;
+    }
+    .cardActions {
+        height: 31%;
+        padding-bottom: 2.2rem !important;
+    }
+    .buttonDetalles {
+        font-size: 1.2rem !important;
+        padding: 4px;
+    }
+    .container-h2-cards h2 {
+        font-size: 2.5rem;
+    }
+    .cardContent {
+        height: 25%;
+    }
+    .custom-content {
+        font-size: 1.2rem !important;
+        margin-top: 10px !important;
+    }
+    .custom-media {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    /*Tercer 100vh, parte de abajo*/
+    .div-container-button-comments {
+        height: 30%;
+        animation: mover 9s infinite;
+        margin: 0 2rem;
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateX(1000px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+    .custom-jiraiya {
+        width: 90px;
+        height: 90px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 1.2rem !important;
+        padding: 1.2rem;
+        height: 100%;
+    }
+}
+
+/*-------------1366px---------------*/
+@media screen and (max-width: 1366px){ /*Esta es la resolucion de mi pantalla, 1366px*/
+
+    /*Primeros 100vh, parte de arriba*/
+    .container-p-cards {
+        width: 75%;
+    }
+    .container-button-cards{ 
+        width: 25%;
+    }
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 15px;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    .container-button-go {
+        animation: mover-vertical 5s infinite;
+    }
+    @keyframes mover-vertical {
+        0% {
+            transform: translateY(50px);
+        }
+        50% {
+            transform: translateY(460px);
+        }
+        100% {
+            transform: translateY(50px);
+        }
+    }
+    .container-button-go button {
+        font-size: 1.3rem;
+        padding: 0.7rem 2.2rem;
+    }
+    .custom-naruto-dibujo {
+        height: 90px;
+        width: 90px;
+    }
+
+    /*Segundos 100vh, parte del medio*/
+    .card {
+        height: 55vh;
+        width: 20vw;
+    }
+    .cardActions {
+        height: 31%;
+        padding-bottom: 2.2rem !important;
+    }
+    .buttonDetalles {
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+    .container-h2-cards h2 {
+        font-size: 2rem;
+    }
+    .cardContent {
+        height: 25%;
+    }
+    .custom-content {
+        font-size: 1.3rem !important;
+    }
+    .custom-media {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    /*Tercer 100vh, parte de abajo*/
+    .div-container-button-comments {
+        height: 30%;
+        animation: mover 9s infinite;
+        margin: 0 2rem;
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateX(1000px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+    .custom-jiraiya {
+        width: 90px;
+        height: 90px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 1.2rem;
+        height: 100%;
+    }
+}
+
+/*-------------1300px---------------*/
+@media screen and (max-width: 1300px){
+
+    /*Primeros 100vh, parte de arriba*/
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 15px;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    .container-button-go {
+        animation: mover-vertical 5s infinite;
+    }
+    @keyframes mover-vertical {
+        0% {
+            transform: translateY(50px);
+        }
+        50% {
+            transform: translateY(500px);
+        }
+        100% {
+            transform: translateY(50px);
+        }
+    }
+    .container-button-go button {
+        font-size: 1.1rem;
+        padding: 0.7rem 2.2rem;
+    }
+    .custom-naruto-dibujo {
+        height: 80px;
+        width: 80px;
+    }
+
+    /*Segundos 100vh, parte del medio*/
+    .card {
+        height: 60vh;
+        width: 20vw;
+    }
+    .cardActions {
+        height: 31%;
+        padding-bottom: 2.5rem !important;
+    }
+    .buttonDetalles {
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+    .container-h2-cards h2 {
+        font-size: 1.5rem;
+    }
+    .cardContent {
+        height: 25%;
+    }
+    .custom-content {
+        font-size: 1.3rem !important;
+    }
+    .custom-media {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    /*Tercer 100vh, parte de abajo*/
+    .div-container-button-comments {
+        height: 30%;
+        animation: mover 9s infinite;
+        margin: 0 2rem;
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(20px);
+        }
+        50% {
+            transform: translateX(950px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+    .custom-jiraiya {
+        width: 90px;
+        height: 90px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem;
+        height: 100%;
+    }
+}
+
+/*--------1150----------*/
+
+@media screen and (max-width: 1150px){
+    @keyframes mover {
+        0% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateX(800px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+}
+
+/*-------------1100px---------------*/
+@media screen and (max-width: 1100px){
+
+    /*Primeros 100vh, parte de arriba*/
+    .container-p-cards {
+        width: 75%;
+    }
+    .container-button-cards{ 
+        width: 25%;
+    }
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 10px;
+        padding: 0;
+        font-size: 1rem !important;
+    }
+    .container-button-go {
+        animation: mover-vertical 5s infinite;
+    }
+    @keyframes mover-vertical {
+        0% {
+            transform: translateY(50px);
+        }
+        50% {
+            transform: translateY(400px);
+        }
+        100% {
+            transform: translateY(50px);
+        }
+    }
+    .container-button-go button {
+        font-size: 1rem !important;
+        padding: 0.5rem 2rem;
+    }
+    .custom-naruto-dibujo {
+        height: 80px;
+        width: 80px;
+    }
+
+    /*Segundos 100vh, parte del medio*/
+    .card {
+        height: 65vh;
+        width: 20vw;
+    }
+    .cardActions {
+        height: 31%;
+        padding-bottom: 2rem !important;
+    }
+    .buttonDetalles {
+        font-size: 1rem !important;
+        padding: 4px;
+    }
+    .container-h2-cards h2 {
+        font-size: 1.5rem;
+    }
+    .cardContent {
+        height: 25%;
+    }
+    .custom-content {
+        font-size: 1rem !important;
+    }
+    .custom-media {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    /*Tercer 100vh, parte de abajo*/
+    .div-container-button-comments {
+        height: 30%;
+        animation: mover 9s infinite;
+        margin: 0 2rem;
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(20px);
+        }
+        50% {
+            transform: translateX(850px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+    .custom-jiraiya {
+        width: 80px;
+        height: 80px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 1rem !important;
+        padding: 1rem 0.5rem;
+        height: 100%;
+    }
+}
+
+/*-------------1000px---------------*/
+@media screen and (max-width: 1000px){
+
+    /*Primeros 100vh, parte de arriba*/
+    .container-p-cards {
+        width: 75%;
+    }
+    .container-button-cards{ 
+        width: 25%;
+    }
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 10px;
+        padding: 0;
+        font-size: 0.89rem !important;
+    }
+    .container-button-go {
+        animation: mover-vertical 5s infinite;
+    }
+    @keyframes mover-vertical {
+        0% {
+            transform: translateY(20px);
+        }
+        50% {
+            transform: translateY(350px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+    }
+    .container-button-go button {
+        font-size: 0.89rem !important;
+        padding: 0.5rem 2rem;
+    }
+    .custom-naruto-dibujo {
+        height: 80px;
+        width: 80px;
+    }
+
+    /*Segundos 100vh, parte del medio*/
+    .card {
+        height: 65vh;
+        width: 20vw;
+    }
+    .cardActions {
+        height: 31%;
+        padding-bottom: 2rem !important;
+    }
+    .buttonDetalles {
+        font-size: 0.89rem !important;
+        padding: 4px;
+    }
+    .container-h2-cards h2 {
+        font-size: 1.5rem;
+    }
+    .cardContent {
+        height: 25%;
+    }
+    .custom-content {
+        font-size: 0.89rem !important;
+    }
+    .custom-media {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    /*Tercer 100vh, parte de abajo*/
+    .div-container-button-comments {
+        height: 30%;
+        animation: mover 9s infinite;
+        margin: 0 2rem;
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(20px);
+        }
+        50% {
+            transform: translateX(760px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+    .custom-jiraiya {
+        width: 80px;
+        height: 80px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 0.89rem !important;
+        padding: 1rem 0.5rem;
+        height: 100%;
+    }
+}
+/*-----------------------900px---------------------------------*/
+
+@media screen and (max-width: 900px){ /*En este media query solo modifiqué el translate de este button, ya que el resto no producen un problema*/
+    @keyframes mover {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(660px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+/*-----------------------850px-----------------------------------*/
+
+@media screen and (max-width: 850px){
+
+     /*Primeros 100vh, parte de arriba*/
+     .container-p-cards {
+        width: 75%;
+    }
+    .container-button-cards{ 
+        width: 25%;
+    }
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 12px;
+        font-size: 0.75rem !important;
+    }
+    .container-button-go {
+        animation: mover-vertical 5s infinite;
+    }
+    @keyframes mover-vertical {
+        0% {
+            transform: translateY(20px);
+        }
+        50% {
+            transform: translateY(420px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+    }
+    .container-button-go button {
+        font-size: 0.75rem !important;
+        padding: 0.5rem 2rem;
+    }
+    .custom-naruto-dibujo {
+        height: 70px;
+        width: 70px;
+    }
+
+    /*Segundos 100vh, parte del medio*/
+    .card {
+        height: 50vh;
+        width: 20vw;
+    }
+    .cardActions {
+        height: 31%;
+        padding-bottom: 2rem !important;
+    }
+    .buttonDetalles {
+        font-size: 0.75rem !important;
+        padding: 4px;
+    }
+    .container-h2-cards h2 {
+        font-size: 1.2rem;
+    }
+    .cardContent {
+        height: 25%;
+    }
+    .custom-content {
+        font-size: 0.75rem !important;
+    }
+    .custom-media {
+        width: 100% !important;
+        height: 45% !important; /*tengo que ir bajandole el heigth de a 5*/
+    }
+
+    /*Tercer 100vh, parte de abajo*/
+    .div-container-button-comments {
+        height: 30%;
+        animation: mover 9s infinite;
+        margin: 0 2rem;
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(630px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    .custom-jiraiya {
+        width: 70px;
+        height: 70px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 0.75rem !important;
+        padding: 0.8rem 6px;
+        height: 100%;
+    }
+
+}
+/*-----------------------680px-----------------------------------*/
+
+@media screen and (max-width: 680px){
+
+    /*Primeros 100vh, parte de arriba*/
+    .container-p-cards {
+       width: 75%;
+   }
+   .container-button-cards{ 
+       width: 25%;
+   }
+   .container-p-cards p {
+       width: 90%;
+       border-image: url("../assets/recuadro-hojas.png");
+       border-image-repeat: repeat;
+       border-image-slice: 33%;
+       border-image-width: 60px;
+       border-image-outset: 12px;
+       font-size: 0.65rem !important;
+   }
+   .container-button-go {
+       animation: mover-vertical 5s infinite;
+   }
+   @keyframes mover-vertical {
+       0% {
+           transform: translateY(20px);
+       }
+       50% {
+           transform: translateY(420px);
+       }
+       100% {
+           transform: translateY(20px);
+       }
+   }
+   .container-button-go button {
+       font-size: 0.65rem !important;
+       padding: 0.5rem 2rem;
+   }
+   .custom-naruto-dibujo {
+       height: 50px;
+       width: 50px;
+   }
+
+   /*Segundos 100vh, parte del medio*/
+   .container-cards {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .sub-container-cards {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    }
+   .card {
+       height: 40vh;
+       width: 8rem;
+   }
+   .cardActions {
+       height: 30%;
+       padding-bottom: 0.8rem !important;
+   }
+   .buttonDetalles {
+    font-size: 0.65rem !important;
+       padding: 4px;
+   }
+   .container-h2-cards h2 {
+       font-size: 1.1rem;
+   }
+   .cardContent {
+       height: 31%;
+   }
+   .custom-content {
+    font-size: 0.65rem !important;
+   }
+   .custom-media {
+       width: 100% !important;
+       height: 40% !important; /*tengo que ir bajandole el heigth de a 5*/
+   }
+
+   /*Tercer 100vh, parte de abajo*/
+   .div-container-button-comments {
+       height: 30%;
+       animation: mover 9s infinite;
+       margin: 0 2rem;
+   }
+   @keyframes mover {
+       0% {
+           transform: translateX(0px);
+       }
+       50% {
+           transform: translateX(450px);
+       }
+       100% {
+           transform: translateX(0px);
+       }
+   }
+   .custom-jiraiya {
+       width: 70px;
+       height: 70px;
+   }
+   .div-container-button-comments button {
+       width: 100%;
+       font-size: 0.65rem !important;
+       padding: 0.8rem 6px;
+       height: 100%;
+   }
+
+}
+
+/*-----------------550px------------------*/
+
+@media screen and (max-width: 550px){
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 12px;
+        font-size: 0.55rem !important;
+    }
+    @keyframes mover {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(330px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+
+/*------------------500px--------------*/
+
+@media screen and (max-width: 500px){
+
+    /*span*/
+    .custom-span {
+        visibility: hidden;
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        background-color: white;
+        width: 300%;
+        font-size: 10px;
+        color: grey;
+        text-shadow: none;
+        font-weight: lighter;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.171);
+        text-align: center;
+    }
+    .custom-span::after {
+        content: "";
+        border: 4px solid;
+        border-color: transparent transparent white;
+        position: absolute;
+        bottom: 100%;
+        left: 5%;
+    }
+
+    /*Primeros 100vh, parte de arriba*/
+    .container-info-cards {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(221, 204, 186);
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .container-general-cards {
+        background-color: rgb(237, 205, 187);
+    }
+    .container-p-cards {
+       width: 100%;
+       height: 60vh;
+       background-color: rgb(255, 237, 219);
+       border-bottom-left-radius: 40px;
+       box-shadow: none;
+   }
+   .container-button-cards{ 
+       height: 20vh;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       border-bottom-left-radius: 40px;
+       border-bottom-right-radius: 40px;
+       box-shadow: 0 8px 10px rgba(0, 0, 0, 0.288);
+   }
+   .container-p-cards p {
+       width: 90%;
+       border-image: url("../assets/recuadro-hojas.png");
+       border-image-repeat: repeat;
+       border-image-slice: 33%;
+       border-image-width: 50px;
+       border-image-outset: 10px;
+       padding: 0;
+       font-size: 0.5rem !important;
+   }
+   .container-button-go {
+       animation: mover-vertical 5s infinite;
+       display: inline-block;
+   }
+   @keyframes mover-vertical {
+       0% {
+           transform: translateX(30px);
+       }
+       50% {
+           transform: translateX(380px);
+       }
+       100% {
+           transform: translateX(30px);
+       }
+   }
+   .container-button-go button {
+       font-size: 0.5rem !important;
+       padding: 0.5rem 1.5rem;
+   }
+   .custom-naruto-dibujo {
+       height: 40px;
+       width: 40px;
+   }
+
+   /*Segundos 100vh, parte del medio*/
+   .container-cards {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .sub-container-cards {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 3rem;
+    }
+    .card {
+        height: 35vh;
+        width: 9rem;
+        margin-bottom: 1rem;
+    }
+    .cardActions {
+        height: 30%;
+        padding-bottom: 0.8rem !important;
+    }
+    .buttonDetalles {
+        font-size: 0.5rem !important;
+        padding: 4px;
+    }
+    .container-h2-cards h2 {
+        font-size: 1.1rem;
+    }
+    .cardContent {
+        padding-top: 1.5rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+    }
+    .custom-content {
+        font-size: 0.7rem !important;
+    }
+    .custom-media {
+        width: 100% !important;
+        height: 45% !important; /*tengo que ir bajandole el heigth de a 5*/
+    }
+
+   /*Tercer 100vh, parte de abajo*/
+   .div2-home {
+    height: 20vh;
+    width: 100%;
+    }
+   .div-container-button-comments {
+       animation: mover 5s infinite;
+       margin: 0;
+   }
+   @keyframes mover {
+    0% {
+        transform: translateX(30px);
+    }
+    50% {
+        transform: translateX(380px);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+   }
+   .custom-jiraiya {
+       width: 40px;
+       height: 40px;
+   }
+   .div-container-button-comments button {
+       width: 100%;
+       font-size: 0.5rem !important;
+       padding: 0.8rem 6px;
+       height: 100%;
+   }
+
+}
+
+/*---------400px---------*/
+
+@media screen and (max-width: 400px){
+
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 50px;
+        border-image-outset: 10px;
+        padding: 0;
+        font-size: 0.45rem !important;
+    }
+
+    /*Naruto*/
+    @keyframes mover-vertical {
+        0% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateX(250px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+
+    /*Jiraiya*/
+    @keyframes mover {
+        0% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateX(250px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+
+}
+/*----------350px-----------*/
+@media screen and (max-width: 350px){
+
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 60px;
+        border-image-outset: 10px;
+        padding: 0;
+        font-size: 0.4rem !important;
+    }
+
+    /*Naruto*/
+    @keyframes mover-vertical {
+        0% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateX(200px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+
+    /*Jiraiya*/
+    @keyframes mover {
+        0% {
+            transform: translateX(50px);
+        }
+        50% {
+            transform: translateX(200px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+
+}
+
+/*---------250px-----------*/
+@media screen and (max-width: 250px){
+
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 20px;
+        border-image-outset: 0px;
+        padding: 0;
+        font-size: 0.3rem !important; 
+    }
+    .container-button-go button {
+        font-size: 0.3rem !important; 
+        padding: 0.5rem 1.5rem;
+    }
+    .custom-naruto-dibujo {
+        height: 30px;
+        width: 30px;
+    }
+    .container-h2-cards h2 {
+        font-size: 0.8rem;
+    }
+    /*cards*/
+    .card {
+        height: 30vh;
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+    .cardActions {
+        height: 30%;
+        padding-bottom: 1.3rem !important;
+    }
+    .buttonDetalles {
+        font-size: 0.3rem !important; 
+        padding: 4px;
+        border: 1px solid white;
+    }
+    .cardContent {
+        padding-top: 1.5rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+    }
+    .custom-content {
+        font-size: 0.3rem !important; 
+    }
+
+    /*Naruto*/
+    @keyframes mover-vertical {
+        0% {
+            transform: translateX(20px);
+        }
+        50% {
+            transform: translateX(150px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+
+    /*Jiraiya*/
+    @keyframes mover {
+        0% {
+            transform: translateX(20px);
+        }
+        50% {
+            transform: translateX(170px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+
+    .custom-jiraiya {
+        width: 30px;
+        height: 30px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 0.3rem !important; 
+        padding: 0.5rem 5px;
+        height: 100%;
+    }
+
+}
+/*----------200px-----------*/
+@media screen and (max-width: 200px){
+
+    .container-p-cards p {
+        width: 90%;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 33%;
+        border-image-width: 30px;
+        border-image-outset: 0px;
+        padding: 0;
+        font-size: 0.27rem !important;
+    }
+    .container-button-go button {
+        font-size: 0.27rem !important;
+        padding: 0.5rem 1.5rem;
+    }
+    .custom-naruto-dibujo {
+        height: 30px;
+        width: 30px;
+    }
+    .container-h2-cards h2 {
+        font-size: 0.8rem;
+    }
+    /*Cards*/
+    .card {
+        height: 25vh;
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+    .cardActions {
+        height: 30%;
+        padding-bottom: 1.3rem !important;
+    }
+    .buttonDetalles {
+        font-size: 0.27rem !important;
+        padding: 4px;
+        border: 1px solid grey;
+    }
+    .cardContent {
+        padding-top: 1.5rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+    }
+    .custom-content {
+        font-size: 0.27rem !important;
+    }
+
+    /*Naruto*/
+    @keyframes mover-vertical {
+        0% {
+            transform: translateX(20px);
+        }
+        50% {
+            transform: translateX(100px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+
+    /*Jiraiya*/
+    @keyframes mover {
+        0% {
+            transform: translateX(20px);
+        }
+        50% {
+            transform: translateX(110px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+
+    .custom-jiraiya {
+        width: 30px;
+        height: 30px;
+    }
+    .div-container-button-comments button {
+        width: 100%;
+        font-size: 0.4rem;
+        padding: 0.5rem 5px;
+        height: 100%;
+    }
+
+}

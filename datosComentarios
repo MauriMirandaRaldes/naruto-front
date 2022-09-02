@@ -1,0 +1,123 @@
+// import React, { useState, useEffect } from "react";
+// import "../estilos/comentarios.css";
+// // Redux
+// import comentariosActions from "../redux/actions/comentariosActions";
+// import { useDispatch, useSelector } from "react-redux";
+
+// function Comentarios() {
+//   const dispatch = useDispatch();
+
+//   const [comentario, setComentario] = useState();
+//   const [reload, setReload] = useState(false);
+
+//   useEffect(() => {
+//     dispatch(comentariosActions.obtenerComentarios());
+//   }, [reload]);
+
+//   async function escribiendoComentario(e) {
+//     var textoEscrito = e.target.value;
+//     setComentario(textoEscrito);
+//   }
+
+//    // metodo get ----------------------------------------
+//    const comentarios = useSelector(
+//     (elemento) => elemento.comentariosReducers.todos
+//   );
+
+//   // metodo post -------------------------------------------------
+
+//   // const nuevoComentario = useSelector(store => store.comentariosReducers.comentario) // esto fue lo ultimo que hice, traje el comentario del reducer
+
+//   function enviandoComentario() {
+//     var input = document.getElementById("input");
+
+//     if (input.value == "" || input.value == undefined || input.value == null) {
+//       alert("tienes que colocar un texto");
+//     } else {
+//       dispatch(comentariosActions.postearComentario({ texto: comentario }));
+//       input.value = "";
+//       setReload(!reload);
+//     }
+//   }
+
+//   // metodo delete --------------------------------------
+//   function eliminarComentario(recibiendoId) {
+//     var idFinal = recibiendoId;
+//     dispatch(comentariosActions.eliminarComentario(idFinal)).then(
+//       (window.location.href = "http://localhost:3000/comentarios")
+//     ); // esto refresca la página al hacer click en eliminar un comentario
+//   }
+
+//   // metodo put ----------------------------------------
+//   function modificarComentario(recibiendoId) {
+//     var idFinal = recibiendoId;
+
+//     // capturando elementos
+//     var divContainer = document.getElementById(`${recibiendoId}`);
+
+//     // creando elementos
+//     var nuevoInput = document.createElement("input");
+//     var botonEnviar = document.createElement("button");
+
+//     // pasando hijos
+//     divContainer.appendChild(nuevoInput);
+//     divContainer.appendChild(botonEnviar);
+
+//     // pasando valores
+//     nuevoInput.setAttribute("placeholder", "Modificar");
+//     botonEnviar.innerText = "Enviar";
+
+//     // escuchadores de eventos
+//     nuevoInput.addEventListener("change", function (e) {
+//       var nuevoTexto = e.target.value;
+
+//         var textoFinal = { texto: nuevoTexto };
+
+//         dispatch(comentariosActions.modificarComentario(idFinal, textoFinal));
+//         setReload(!reload);
+
+//         nuevoInput.remove();
+//         botonEnviar.remove();
+      
+//     });
+//   }
+
+//   return (
+//     <div className="container-comentarios">
+//       <div className="div1-comentarios">
+//         <h1>Bienvenido a nuestra sección de comentarios</h1>
+//       </div>
+//       <div className="div2-comentarios">
+//         <input
+//           id="input"
+//           placeholder="Dejá tu comentario"
+//           onChange={escribiendoComentario}
+//         />
+//         <button onClick={enviandoComentario}>Enviar</button>
+//       </div>
+//       <div className="div3-comentarios">
+//         {comentarios?.map((elemento) => {
+//           var render = (
+//             <div
+//               id={elemento._id}
+//               className="div4-comentarios"
+//               key={elemento._id}
+//             >
+//               <p>{elemento.texto}</p>
+//               <button onClick={() => eliminarComentario(elemento._id)}>
+//                 Eliminar
+//               </button>
+//               <button onClick={() => modificarComentario(elemento._id)}>
+//                 Modificar
+//               </button>
+//             </div>
+//           );
+
+//           return render;
+//         })}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Comentarios;

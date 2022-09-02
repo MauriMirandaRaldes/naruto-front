@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div1-detallesPj {
+    background-color: rgb(255, 237, 219);
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div1-detallesPj img {
+    width: 510px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+}
+.div1-detallesPj h1 {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.div1-chiquito-detallesPj {
+    width: 40%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 10px;
+    border-image: url("../assets/recuadro-hojas.png");
+    border-image-repeat: repeat;
+    border-image-slice: 31%;
+    border-image-width: 71px;
+    border-image-outset: 45px;
+}
+.div2-chiquito-detallesPj {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1-chiquito-detallesPj p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem !important;
+    color: black;
+}
+.div1-chiquito-detallesPj h2 {
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+/* ------------div2------------ */
+.div4-chiquito-detallesPj {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.custom-like {
+    cursor: pointer;
+}
+.custom-container-likes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    padding: 6px;
+    border: 2px solid rgb(191, 146, 112);
+    border-radius: 5px;
+}
+.container-likes-y-habilidades {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.container-likes-y-habilidades button {
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+    font-size: 1.3rem !important;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid rgb(191, 146, 112);
+    background-color: rgba(165, 42, 42, 0);
+    color: rgb(191, 146, 112);
+}
+.container-likes-y-habilidades button:hover {
+    background-color: rgb(191, 146, 112);
+    cursor: pointer;
+    transition: all 300ms;
+    color: white;
+}
+/*---------Habilidades---------*/
+.container-habilidades {
+    background-color: rgb(237, 205, 187);
+    height: 100vh;
+    display: flex;
+    background: repeating-linear-gradient(45deg, rgb(237, 205, 187) , rgb(237, 205, 187) 10px, white 10px, white 20px);
+}
+.sub-container-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+.sub-container-habilidades-2 h1 {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+    margin-bottom: 1rem;
+    border-bottom: 3px solid grey;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem !important;
+    letter-spacing: 2px;
+}
+.sub-container-habilidades h2 {
+    padding: 1rem 2rem;
+}
+.sub-container-habilidades-2 {
+    background-color: rgb(227, 183, 160);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.div1-habilidades {
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    margin-bottom: 1rem;
+}
+.div1-habilidades p { /*aca*/
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(191, 146, 112);
+    margin: 0 1rem 0 0;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 70%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem !important;
+}
+.custom-img-habilidades {
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+}
+.custom-img2-habilidades {
+    height: 40%;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+}
+.container-linkrouters {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.container-linkrouters button {
+    padding: 5px;
+    font-size: 1.5rem !important;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid white;
+    background-color: rgba(250, 235, 215, 0);
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.container-linkrouters button:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: all 300ms;
+    color: rgb(191, 146, 112);
+}
+.container-linkrouters-detalles {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.custom-alerta-detalles {
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    position: absolute;
+    padding: 1rem;
+    left: 2%;
+    top: 2%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem !important;
+}
+
+/*Detalles*/
+@media screen and (max-width: 1000px){
+
+    /*------------Detalles----------*/
+    .div1-chiquito-detallesPj {
+        width: 40%;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        border: 10px solid black;
+        border-radius: 10px;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 31%;
+        border-image-width: 71px;
+        border-image-outset: 45px;
+    }
+    .div1-chiquito-detallesPj p {
+        font-size: 1.1rem !important;
+    }
+    .div1-chiquito-detallesPj h2 {
+        font-size: 1.1rem !important;
+    }
+    .div1-detallesPj h1 {
+        font-size: 2rem !important;
+    }
+    /*Container linkrouters*/
+    .container-linkrouters-detalles {
+        width: 40%;
+    }
+    /*buttons*/
+    .container-likes-y-habilidades button {
+        font-size: 1.1rem !important;
+    }
+    .custom-like {
+        font-size: 1.1rem !important;
+    }
+    /*Alerta*/
+    .custom-alerta-detalles {
+        font-size: 1.1rem !important;
+    }
+
+    /*------------habilidades----------*/
+    .container-linkrouters {
+        width: 34%;
+    }
+    .container-linkrouters button {
+        padding: 5px;
+        font-size: 1rem !important;
+    }
+    .sub-container-habilidades-2 h1 {
+        font-size: 2rem !important;
+    }
+    /*cajas de habiliades*/
+    .div1-habilidades p { /*aca*/
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+     /*------------Detalles----------*/
+     .div1-chiquito-detallesPj {
+        width: 70%;
+        border: 10px solid black;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 31%;
+        border-image-width: 71px;
+        border-image-outset: 45px;
+    }
+    .div1-chiquito-detallesPj p {
+        font-size: 0.9rem !important;
+    }
+    .div1-chiquito-detallesPj h2 {
+        font-size: 0.9rem !important;
+    }
+    .div1-detallesPj h1 {
+        font-size: 2rem !important;
+    }
+    /*Container linkrouters*/
+    .container-linkrouters-detalles {
+        width: 28%;
+    }
+    /*buttons*/
+    .container-likes-y-habilidades button {
+        font-size: 0.9rem !important;
+    }
+    .custom-like {
+        font-size: 0.9rem !important;
+    }
+    /*Alerta*/
+    .custom-alerta-detalles {
+        font-size: 0.9rem !important;
+    }
+    /*-------habilidades----------*/
+    .container-habilidades {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: repeating-linear-gradient(45deg, rgb(237, 205, 187) , rgb(237, 205, 187) 10px, white 10px, white 20px);
+    }
+    .container-linkrouters {
+        width: 20%;
+        margin: 0;
+    }
+    .sub-container-habilidades-2 h1 {
+        font-size: 2rem !important;
+        margin: 0;
+    }
+    .sub-container-habilidades-2 {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    }
+    .sub-container-habilidades {
+        width: 100%;
+        height: 80%;
+        overflow: auto;
+        padding-top: 5rem;
+    }
+    /*imagen*/
+    .custom-img2-habilidades {
+        height: 85px;
+        width: 130px;
+        box-shadow: none;
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    /*imagen de las habilidades*/
+    .custom-img-habilidades {
+        height: 120px;
+        width: 120px;
+        border-radius: 10px;
+    }
+    /*texto de las habilidades*/
+    .div1-habilidades {
+        width: 90%;
+        padding: 1rem 0;
+    }
+    .div1-habilidades p { /*aca*/
+        font-size: 0.9rem !important;
+        margin-right: 1rem;
+        padding: 1rem;
+        width: 73%;
+    }
+    /*buttons back y back home*/
+    .container-linkrouters button {
+        padding: 5px;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (max-width: 550px){
+     /*------------Detalles----------*/
+     .div1-chiquito-detallesPj {
+        width: 70%;
+        border: 10px solid black;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 31%;
+        border-image-width: 71px;
+        border-image-outset: 45px;
+    }
+    .div1-chiquito-detallesPj p {
+        font-size: 0.9rem !important;
+    }
+    .div1-chiquito-detallesPj h2 {
+        font-size: 0.9rem !important;
+    }
+    .div1-detallesPj h1 {
+        font-size: 2rem !important;
+    }
+    /*Container linkrouters*/
+    .container-linkrouters-detalles {
+        width: 35%;
+    }
+    .container-linkrouters button {
+        padding: 5px;
+    }
+    /*buttons*/
+    .container-likes-y-habilidades button {
+        font-size: 0.9rem !important;
+    }
+    .custom-like {
+        font-size: 0.9rem !important;
+    }
+    /*Alerta*/
+    .custom-alerta-detalles {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+     /*------------Detalles----------*/
+     .div1-chiquito-detallesPj {
+        width: 50%;
+        border: 10px solid black;
+        border-image: url("../assets/recuadro-hojas.png");
+        border-image-repeat: repeat;
+        border-image-slice: 31%;
+        border-image-width: 71px;
+        border-image-outset: 45px;
+    }
+    .div1-chiquito-detallesPj p {
+        font-size: 0.5rem !important;
+    }
+    .div1-chiquito-detallesPj h2 {
+        font-size: 0.5rem !important;
+    }
+    .div1-detallesPj h1 {
+        font-size: 1rem !important;
+    }
+    /*Container linkrouters*/
+    .container-linkrouters-detalles {
+        width: 37%;
+    }
+    /*buttons*/
+    .container-likes-y-habilidades button {
+        font-size: 0.5rem !important;
+    }
+    .custom-like {
+        font-size: 0.5rem !important;
+    }
+    /*Alerta*/
+    .custom-alerta-detalles {
+        font-size: 0.5rem !important;
+    }
+    /*habilidades*/
+    .container-habilidades {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: repeating-linear-gradient(45deg, rgb(237, 205, 187) , rgb(237, 205, 187) 10px, white 10px, white 20px);
+    }
+    .container-linkrouters {
+        width: 120px;
+        border: 2px solid white;
+        border-radius: 10px;
+        height: 80px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-linkrouters button {
+        padding: 5px;
+        font-size: 0.6rem !important;
+        margin: 1px 0;
+    }
+    .sub-container-habilidades-2 h1 {
+        font-size: 1.5rem !important;
+        width: 120px;
+        margin: 0;
+        border: none;
+        text-align: center;
+    }
+    .sub-container-habilidades-2 {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.199); 
+    }
+    .sub-container-habilidades {
+        width: 100%;
+        height: 80%;
+        overflow: auto;
+        padding-top: 1rem;
+    }
+    /*imagen*/
+    .custom-img2-habilidades {
+        height: 80px;
+        width: 120px;
+        box-shadow: none;
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    /*imagen de las habilidades*/
+    .custom-img-habilidades {
+        height: 100%;
+        width: 20%;
+        border-radius: 10px;
+    }
+    /*texto de las habilidades*/
+    .div1-habilidades {
+        width: 90%;
+        padding: 1rem 0;
+    }
+    .div1-habilidades p { /*aca*/
+        font-size: 0.6rem !important;
+        width: 70%;
+        height: 100%;
+        margin: 0 10px;
+    }
+}
