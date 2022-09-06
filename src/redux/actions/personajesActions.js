@@ -5,7 +5,7 @@ const personajesActions = {
     obtenerPersonajes: ()=> {
         return async (dispatch, getState)=> {
             try {
-                var miData = await axios.get("https://naruto-back.vercel.app/api/misPersonajes")
+                var miData = await axios.get("https://naruto-back-6kyel9ibi-maurimirandaraldes.vercel.app//api/misPersonajes")
                 console.log(miData.data.respuesta)
                 dispatch(
                     {
@@ -22,7 +22,7 @@ const personajesActions = {
     obtenerUnPersonaje: (recibiendoId)=> {
         return async (dispatch, getState)=> {
             try {
-                var miData = await axios.get(`https://naruto-back.vercel.app/api/misPersonajes/${recibiendoId}`)
+                var miData = await axios.get(`https://naruto-back-6kyel9ibi-maurimirandaraldes.vercel.app//misPersonajes/${recibiendoId}`)
 
                 dispatch(
                     {
@@ -43,7 +43,7 @@ const personajesActions = {
         return async (dispatch, getState)=> {
 
             try {
-                var miData = await axios.put(`https://naruto-back.vercel.app/api/misPersonajes/${recibiendoId}`,{}, {headers: {"Authorization": "Bearer " + token}})
+                var miData = await axios.put(`https://naruto-back-6kyel9ibi-maurimirandaraldes.vercel.app//api/misPersonajes/${recibiendoId}`,{}, {headers: {"Authorization": "Bearer " + token}})
                 // console.log(miData.data)
                 return miData
             } catch (error){
