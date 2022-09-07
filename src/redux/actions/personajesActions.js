@@ -5,7 +5,7 @@ const personajesActions = {
     obtenerPersonajes: ()=> {
         return async (dispatch, getState)=> {
             try {
-                var miData = await axios.get("http://localhost:4000/api/misPersonajes")
+                var miData = await axios.get("https://naruto-back-heroku.herokuapp.com//api/misPersonajes")
                 console.log(miData.data.respuesta)
                 dispatch(
                     {
@@ -22,7 +22,7 @@ const personajesActions = {
     obtenerUnPersonaje: (recibiendoId)=> {
         return async (dispatch, getState)=> {
             try {
-                var miData = await axios.get(`http://localhost:4000/api/misPersonajes/${recibiendoId}`)
+                var miData = await axios.get(`https://naruto-back-heroku.herokuapp.com//api/misPersonajes/${recibiendoId}`)
 
                 dispatch(
                     {
@@ -43,7 +43,7 @@ const personajesActions = {
         return async (dispatch, getState)=> {
 
             try {
-                var miData = await axios.put(`http://localhost:4000/api/misPersonajes/${recibiendoId}`,{}, {headers: {"Authorization": "Bearer " + token}})
+                var miData = await axios.put(`https://naruto-back-heroku.herokuapp.com//api/misPersonajes/${recibiendoId}`,{}, {headers: {"Authorization": "Bearer " + token}})
                 // console.log(miData.data)
                 return miData
             } catch (error){
