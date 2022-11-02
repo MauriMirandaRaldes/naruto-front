@@ -155,7 +155,6 @@
 .divInfo img {
     width: 70px;
     height: 65px;
-    object-fit: center;
     border-radius: 50%;
 }
 .divInfo2 img {
@@ -164,18 +163,6 @@
     object-fit: cover;
     border-radius: 9px;
     border: 2px solid white ;
-    animation: mover-imagen 10s infinite;
-}
-@keyframes mover-imagen {
-    0% {
-        object-position: top left;
-    }
-    50% {
-        object-position: bottom right;
-    }
-    100% {
-        object-position: top left;
-    }
 }
 .subDivInfo1 {
     display: flex;

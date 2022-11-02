@@ -50,7 +50,7 @@
 }
 .container-img-signUp {
     width: 80%;
-    background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") center / cover no-repeat;
+    background: url("https://images3.alphacoders.com/135/thumb-1920-135637.jpg") left / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
